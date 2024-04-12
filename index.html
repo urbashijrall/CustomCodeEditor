@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Code Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="custom-code-editor">
+        <div class="container">
+            <h1 class="editor-heading"> <a href="#">Online Code Editor <i class="fa-solid fa-code"></i></a> </h1>
+            <div class="left-column">
+                <div class="htmlCode">
+                    <label for="html-code"><i class="fa-brands fa-html5"></i> HTML</label>
+                    <textarea placeholder="Enter your HTML code" id="html-code" onkeyup="run()" onkeydown="handleTab(event)"></textarea>
+                </div>
+
+                <div class="cssCode">
+                    <label for="css-code"><i class="fa-brands fa-css3-alt"></i> CSS</label>
+                    <textarea placeholder="Enter your CSS code" id="css-code" onkeyup="run()" onkeydown="handleTab(event)"></textarea>
+                </div>
+
+                <div class="jsCode">
+                    <label for="js-code"><i class="fa-brands fa-js"></i> JS</label>
+                    <textarea placeholder="Enter your JS code" id="js-code" onkeyup="run()" onkeydown="handleTab(event)"></textarea>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="outputWindow">
+                    <label for="output-preview"><i class="fa-solid fa-play"></i>Output</label>
+                    <iframe id="output-preview" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+        integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
